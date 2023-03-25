@@ -14,16 +14,18 @@ const Countries = () => {
 
 
     return (
-        <div className='container'>   
+        <div className='container-fluid text-center'>   
             <h1 > Rest Countries </h1>
             <p >Available Countries : {Countries.length} </p>
 
             <div className='countries'>
 
                 {
-                    Countries.map(country=><Country country={country}></Country>)
+                    Countries.map(country=><Country country={country} key={country.cca3}></Country>)
                 }
 
+             
+                
                 {/* way two  */}
 
                 {/* {
